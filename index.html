@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10091f">
+  <meta name="description" content="SONI FF — фармоиши бастаҳои алмос барои Free Fire.">
+  <title>SONI FF — Diamond Top Up</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">◆</span> SONI <b>FF</b></a>
+    <span class="secure">● Дӯкони онлайн</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">FREE FIRE • DIAMOND TOP UP</p>
+        <h1>Алмосҳои худро<br><span>осон фармоиш деҳ</span></h1>
+        <p class="hero-sub">Бастаи дилхоҳро интихоб кун, Player ID-ро ворид намо ва фармоишатро сабт кун.</p>
+        <a class="primary-btn" href="#order">Фармоиш додан <span>↘</span></a>
+      </div>
+      <div class="diamond-art" aria-hidden="true"><div class="diamond">◆</div><span class="spark s1">✦</span><span class="spark s2">✧</span><span class="spark s3">✦</span></div>
+    </section>
+
+    <section class="section" id="packages">
+      <div class="section-heading"><div><p class="eyebrow">ИНТИХОБИ БАСТА</p><h2>Бастаҳои алмос</h2></div><span class="muted">Нархҳо намунавӣ ҳастанд</span></div>
+      <div class="packages" id="packagesGrid"></div>
+    </section>
+
+    <section class="order-panel section" id="order">
+      <div class="section-heading"><div><p class="eyebrow">ҚАДАМИ ОХИР</p><h2>Маълумоти фармоиш</h2></div></div>
+      <form id="orderForm">
+        <label for="playerId">Free Fire Player ID</label>
+        <input id="playerId" name="playerId" inputmode="numeric" pattern="[0-9]{6,15}" minlength="6" maxlength="15" placeholder="Масалан: 123456789" required>
+        <label for="playerName">Номи бозингар (ихтиёрӣ)</label>
+        <input id="playerName" name="playerName" maxlength="30" placeholder="Номи бозингар">
+        <div class="summary">
+          <div><span class="muted">Бастаи интихобшуда</span><strong id="selectedPackage">Ҳоло интихоб нашудааст</strong></div>
+          <div><span class="muted">Нарх</span><strong id="selectedPrice">—</strong></div>
+        </div>
+        <button class="primary-btn submit-btn" type="submit">Сабти фармоиш <span>→</span></button>
+        <p class="small-note">Дар ин версия фармоиш танҳо дар браузер сабт мешавад. Ин тугма пардохт ё фиристодани алмосро иҷро намекунад.</p>
+        <div id="notice" class="notice" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <section class="how section">
+      <p class="eyebrow">ЧӢ ТАВР КОР МЕКУНАД?</p>
+      <div class="steps">
+        <div><span>01</span><h3>Баста интихоб кун</h3><p>Миқдори алмосро интихоб намо.</p></div>
+        <div><span>02</span><h3>Player ID навис</h3><p>ID-и бозиро бодиққат ворид кун.</p></div>
+        <div><span>03</span><h3>Фармоишро сабт кун</h3><p>Баъд аз пайвасти система пардохт дастрас мешавад.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">◆</span> SONI <b>FF</b></a><p>SONI FF — лоиҳаи мустақил, бо Garena ё Free Fire расман вобаста нест.</p><p>© <span id="year"></span> SONI FF</p></footer>
+  <script src="app.js"></script>
+</body>
+</html>
